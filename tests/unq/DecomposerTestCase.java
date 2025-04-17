@@ -38,10 +38,15 @@ public void setUp() throws Exception {
  */	
 	@Test
 	void theOneWithTheMostEvensTest(){
-		int numA = 242; //3
-		ArrayList<Integer> listaA = (ArrayList<Integer>) Arrays.asList(2,4,2);
-		int numB= 525; //1
-		ArrayList<Integer> listaB = (ArrayList<Integer>) Arrays.asList(5,2,5);
+		int numA = 242; //3 evens
+		int numB= 525; //1 evens
+		//number to list
+		List<Integer> numAList = Arrays.asList(2,4,2);
+		List<Integer> numBList = Arrays.asList(5,2,5);
+		//list to array
+		ArrayList<Integer> listaA = new ArrayList<>(numAList);
+		ArrayList<Integer> listaB = new ArrayList<>(numBList);
+		
 		Counter counter = new Counter();
 		
 		assertEquals(242, decomposer.theOneWithMostEvens(numA,  numB));
@@ -50,6 +55,21 @@ public void setUp() throws Exception {
 		assertEquals(0, counter.getOddOcurrences());
 		counter.setList(listaB);
 		assertEquals(1, counter.getEvenOcurrences());
+		assertEquals(2, counter.getOddOcurrences());
+	}
+	
+	@Test
+	void mostEvenDigitsTest() {
+		int numA = 242; //3 evens
+		int numB= 525; //1 evens
+		int numC = 555; //0 evens
+		
+		//puts all the numbers on a list
+		List<Integer> numsList = Arrays.asList(numA, numB, numC);
+		//list to array
+		ArrayList<Integer> nums = new ArrayList<>(numsList);
+		
+		assertEquals(242, decomposer.mostEvenDigits(nums));		
 	}
 	
 }
