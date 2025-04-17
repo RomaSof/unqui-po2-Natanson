@@ -1,10 +1,12 @@
-package ar.edu.unq.po2.tp3;
+package unq;
 
 import static org.junit.jupiter.api.Assertions.*;
 //import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp3.MultiplicationTable;
 
 class MultiplicationTableTestCase {
 	private MultiplicationTable mult; 
