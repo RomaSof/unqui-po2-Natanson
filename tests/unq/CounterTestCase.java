@@ -42,7 +42,7 @@ import ar.edu.unq.po2.tp3.Counter;
  @Test
  public void testUnevenOcurrences() {
  // Getting the uneven occurrences
- int amount = counter.getOddOscurrences();
+ int amount = counter.getOddOcurrences();
  assertEquals(amount, 9);
  }
  /**

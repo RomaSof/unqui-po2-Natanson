@@ -14,6 +14,11 @@ public class Counter {
 		return new ArrayList<>(this.lista); 
 	}
 	
+	//gives the class a new list replacing the old one
+	public void setList(ArrayList<Integer> newList){
+		this.lista = new ArrayList<Integer>(newList);
+	}
+	
 	//adds a single integer to the list
 	public void addNumber(int i) {
 		this.lista.add(i);
@@ -37,7 +42,7 @@ public class Counter {
 	}
 	
 	//returns amount of uneven
-	public int getOddOscurrences(){
+	public int getOddOcurrences(){
 		return oddssIn().size() ;
 	}
 	
