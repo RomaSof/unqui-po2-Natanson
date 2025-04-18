@@ -7,7 +7,7 @@ public class Rectangle {
 	
 	//Initializes a new rectangle with an starting point, a width and a length.
 	public Rectangle(Point p, int w, int l) {
-		validateRectangle(w, l);
+		//validateRectangle(w, l);
 		createGeometricForm(p,w,l);
 	}
 	
@@ -25,11 +25,11 @@ public class Rectangle {
 	}
 	
 	//validates the width and length are not equals for it to be a rectangle 
-	private void validateRectangle(int w, int l) {
-		if(w == l) { 
-			throw new IllegalArgumentException("for a rectangle the width must be greater or lesser than the length");
-		}
-	}
+	//private void validateRectangle(int w, int l) {
+	//	if(w == l) { 
+	//		throw new IllegalArgumentException("for a rectangle the width must be greater or lesser than the length");
+	//	}
+	//}
 	
 	//returns the area of the rectangle
 	public int area() { //A = l × w
