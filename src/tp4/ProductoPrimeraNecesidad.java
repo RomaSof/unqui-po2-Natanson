@@ -1,16 +1,20 @@
 package tp4;
 
 public class ProductoPrimeraNecesidad extends Producto{
+	private double descuentoAplicar;
 	
 	
 	//constructors
-	public ProductoPrimeraNecesidad(String n, Double p) {
+	public ProductoPrimeraNecesidad(String n, Double p, double desc) {
 		super(n, p);
+		this.descuentoAplicar = desc;
 	}
 	
-	public ProductoPrimeraNecesidad(String n, Double p, Boolean e) {
+	public ProductoPrimeraNecesidad(String n, Double p, Boolean e, double desc) {
 		super(n, p, e);
+		this.descuentoAplicar = desc;
 	}
+	
 	
 	//methods
 	@Override
@@ -20,6 +24,6 @@ public class ProductoPrimeraNecesidad extends Producto{
 	}
 	
 	private double descuento() {
-		return super.getPrecio() * 0.10;
+		return super.getPrecio() * this.descuentoAplicar;
 	}
 }
