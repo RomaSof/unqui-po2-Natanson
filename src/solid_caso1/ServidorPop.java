@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ServidorPop implements IServidor {
-
+	//además tener las varibles importantes no privadas rompe el encapsulamiento que puede generar porblemas en el [O]
 	public List<Correo> recibirNuevos(String user, String pass) { 
 		List<Correo> retorno = new ArrayList<Correo>();
 	  //Verificar autenticidad de usuario.

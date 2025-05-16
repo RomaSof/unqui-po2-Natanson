@@ -4,7 +4,7 @@ import java.util.ArrayList;
 //[SOLID]
 
 public class ClienteEMail {
-
+//además tener las varibles importantes no privadas rompe el encapsulamiento que puede generar porblemas en el [O]
 	 String nombreUsuario;
 	 String passusuario;
 
