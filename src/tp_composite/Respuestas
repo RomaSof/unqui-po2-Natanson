@@ -1,0 +1,17 @@
+1. En la intención del patrón se indica que el cliente debe poder tratar de manera uniforme
+   tanto a objetos individuales como compuestos. ¿ Cómo se logra esto con el patrón Composite? 
+2. Explique en que casos aplicaría el patrón. 
+3. Dentro de las consecuencias, se indica que los clientes deben mantenerse 
+   simples y no deben ser conscientes si están interactuando con un objeto hoja o una composición. 
+   ¿Que elementos de la programacion orientada a objetos hacen posible esto?
+   
+   
+   
+4. ¿Qué impacto genera ensu diseño el hecho de compartir instancias de parcelas entre composiciones? Es decir, que la misma
+    instancia se encuentre en más de una composición.
+    
+5.Describa las alternativas que puede utilizar para calcular la ganancia anual. 
+  Relacione las alternativas. 
+4. Explique la discusión sobre quiénes deben implementar las operaciones de agregado y borrado de hijos. 
+5. Sobre su implementación, indique los roles que desempeñan cada una de las 
+   clases diseñadas en relación al patrón Composite.  
