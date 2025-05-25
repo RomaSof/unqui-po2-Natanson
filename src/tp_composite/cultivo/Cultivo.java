@@ -1,4 +1,4 @@
-package tp_composite;
+package tp_composite.cultivo;
 
 public interface Cultivo {
 	

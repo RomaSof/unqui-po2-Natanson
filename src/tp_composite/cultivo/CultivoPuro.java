@@ -1,4 +1,4 @@
-package tp_composite;
+package tp_composite.cultivo;
 
 public class CultivoPuro implements Cultivo{
 	private int precio;
