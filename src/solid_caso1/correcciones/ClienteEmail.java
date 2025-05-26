@@ -1,4 +1,4 @@
-package solid_caso1_correcciones;
+package solid_caso1.correcciones;
 
 import solid_caso1.Correo;
 

@@ -1,4 +1,4 @@
-package solid_caso1_correcciones;
+package solid_caso1.correcciones;
 
 public class Correo {
 	public Correo(String asunto, String destinatario, String cuerpo) {
